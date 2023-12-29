@@ -54,10 +54,8 @@ export default function Dashboard() {
         // alert("inside")
         const status = sessionStorage.getItem("userFlag")
         if (status === 'false') {
-            // alert("Inside here")
-            // axios.defaults.baseURL = 'http://localhost:5000/api/';
             const response = await fetch('https://kanban-board-fg6l.onrender.com/api/Auth/fetchUser', {
-                method: "POST",
+                method: "POST", 
                 credentials: 'include',
                 headers: {
                     "Content-Type": "application/json",
@@ -180,12 +178,12 @@ export default function Dashboard() {
         //* using context
         setWs_id(ws_id)
         sessionStorage.setItem("ws_id", ws_id)
-        navigate("https://kanban-board-fg6l.onrender.com/board")
+        navigate("/board")
     }
 
     //! accept and reject the requests
     const acceptRequest = (e,ws_id,from_email) => {
-        axios.post('/WS/acceptRequest',
+        axios.post('WS/acceptRequest',
         {
             "ws_id":ws_id,
             "email":from_email,
@@ -295,7 +293,7 @@ export default function Dashboard() {
                     const data = {
                         project_name : document.querySelector('.ws_name').value
                     }
-                    axios.post('/WS/createWS',
+                    axios.post('WS/createWS',
                         data,
                     ).then((response) => {
                         if (response.data.success) {
