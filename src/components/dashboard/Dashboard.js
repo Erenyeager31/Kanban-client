@@ -10,7 +10,7 @@ import { Modal } from 'react-bootstrap';
 import '../../static/dashboard.css'
 import ReactModal from 'react-modal';
 axios.defaults.withCredentials = true
-axios.defaults.baseURL = 'http://localhost:5000/api/';
+axios.defaults.baseURL = 'https://kanban-board-fg6l.onrender.com/api/';
 
 export default function Dashboard() {
     const navigate = useNavigate()
@@ -55,8 +55,8 @@ export default function Dashboard() {
         const status = sessionStorage.getItem("userFlag")
         if (status === 'false') {
             // alert("Inside here")
-            axios.defaults.baseURL = 'http://localhost:5000/api/';
-            const response = await fetch('http://localhost:5000/api/Auth/fetchUser', {
+            // axios.defaults.baseURL = 'http://localhost:5000/api/';
+            const response = await fetch('https://kanban-board-fg6l.onrender.com/api/Auth/fetchUser', {
                 method: "POST",
                 credentials: 'include',
                 headers: {

@@ -19,7 +19,7 @@ function Otp_ver() {
   const sendOTP = async (e) => {
     // alert("hi")
     e.preventDefault();
-    const response = await fetch('http://localhost:5000/api/Auth/sendOTP', {
+    const response = await fetch('https://kanban-board-fg6l.onrender.com/api/Auth/sendOTP', {
       method: "POST",
       // credentials: 'include',
       headers: {
@@ -39,7 +39,7 @@ function Otp_ver() {
   const verifyOTP = async (e) => {
     e.preventDefault()
 
-    const response = await axios.post('http://localhost:5000/api/Auth/verifyOTP', {
+    const response = await axios.post('https://kanban-board-fg6l.onrender.com/api/Auth/verifyOTP', {
       email: credential.email,
       OTP: credential.otp.toString()
     }, {

@@ -4,9 +4,10 @@ import { WSContext } from '../context/Workspace'
 import axios from 'axios'
 import ReactModal from 'react-modal';
 axios.defaults.withCredentials = true
-axios.defaults.baseURL = 'http://localhost:5000/api/';
+axios.defaults.baseURL = 'https://kanban-board-fg6l.onrender.com/api/';
 
-const WS_URL = 'ws://localhost:5000'
+// const port = 
+const WS_URL = 'ws://kanban-board-fg6l.onrender.com'
 const message = {
   "JOIN": "join",
   "LEAVE": "leave",

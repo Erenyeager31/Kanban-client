@@ -17,7 +17,7 @@ export default function Signup() {
     // alert("hi")
     e.preventDefault();
 
-    const response = await fetch('http://localhost:5000/api/Auth/createUser', {
+    const response = await fetch('https://kanban-board-fg6l.onrender.com/api/Auth/createUser', {
       method: "POST",
       credentials: 'include',
       headers: {
