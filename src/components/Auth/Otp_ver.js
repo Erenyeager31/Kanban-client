@@ -74,7 +74,7 @@ function Otp_ver() {
             <button type="button" onClick={verifyOTP} disabled={!readOnly}>VERIFY</button>
           </div>
           <div className="button_login">
-            <a href='https://kanban-board-fg6l.onrender.com/login'>or LOGIN</a>
+            <a href='login'>or LOGIN</a>
           </div>
         </form>
       </div>
