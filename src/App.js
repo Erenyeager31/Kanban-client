@@ -33,7 +33,7 @@ function App() {
           }>
           </Route>
           
-          <Route path='https://kanban-board-fg6l.onrender.com/login' element={
+          <Route path='/login' element={
             <Auth component="login" />
           }>
           </Route>
