@@ -51,7 +51,7 @@ function Otp_ver() {
     if (json.success) {
       alert(json.message);
       sessionStorage.setItem('email',credential.email)
-      window.location.replace('/signup')
+      window.location.replace('./signup')
     } else {
       alert(json.message);
     }
@@ -74,7 +74,7 @@ function Otp_ver() {
             <button type="button" onClick={verifyOTP} disabled={!readOnly}>VERIFY</button>
           </div>
           <div className="button_login">
-            <a href='/login'>or LOGIN</a>
+            <a href='./login'>or LOGIN</a>
           </div>
         </form>
       </div>

@@ -69,7 +69,7 @@ export default function Login() {
                     </div> */}
                 </form>
                 <div className="button_div_signup">
-                    <a href='/signup' type="button">SIGN UP</a>
+                    <a href='./' type="button">SIGN UP</a>
                 </div>
             </div>
         </div>
