@@ -54,8 +54,6 @@ export default function Dashboard() {
         // alert("inside")
         const status = sessionStorage.getItem("userFlag")
         if (status === 'false') {
-            // alert("Inside here")
-            // axios.defaults.baseURL = 'http://localhost:5000/api/';
             const response = await fetch('https://kanban-board-fg6l.onrender.com/api/Auth/fetchUser', {
                 method: "POST",
                 credentials: 'include',
