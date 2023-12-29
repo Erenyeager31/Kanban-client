@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+
+:root {
+    --primary-color:#344e41;
+    --secondary-color:#588157;
+    --text-color:#faedcd;
+    --button-color:#80ed99;
+    --neon-text-color: rgb(216, 184, 23);
+    --neon-border-color: rgb(224, 129, 13);
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+}
+
+header{
+    width: 30%;
+    height: 30px;
+    text-align: center;
+    background-color: #f2f2f2;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 3%;
+    left: 65%;
+    border-radius:0px 20px;
+}
+
+/*! for the switch button */
+
+.joined{
+    width: 30%;
+    height: 40px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:all 5s ease-in-out;
+}
+
+.request{
+    width: 30%;
+    height: 40px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    transition: 1s ease-in-out;
+}
+
+.htag{
+    font-size: 18px;
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #faedcd;
+    font-weight: 700;
+    border-bottom: 10px solid #fff;
+    user-select: none;
+}
+
+.box{
+    width: 20%;
+    height: 100%;
+    background-color: #fff;
+}
+
+/*! dashboard */
+
+.dashboard{
+    width: 50%;
+    height: 60vh;
+    /* background: #000; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 2s ease-in-out;
+}
+
+.joined d_left{
+    transition: opacity 1s ease-in-out; /* Adjust duration and timing function as needed */
+}
+
+.d_left,.d_right{
+    width: 90%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1%;
+    padding: 1%;
+    transition: opacity 1s ease-in-out; /* Adjust duration and timing function as needed */
+}
+  
+.joined_ws,.request_ws{
+    width: 100%;
+    height: 40px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f2f2f2;
+}
+
+.info_area{
+    width: 100%;
+    height: 89%;
+    background-color: var(--secondary-color);
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.ws_list{
+    width: 98%;
+    height: 98%;
+    background-color: var(--text-color);
+    overflow-y: scroll;
+}
+
+.head{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    background-color: #d2cbcb66;
+    margin-bottom: 10px;
+}
+
+.project_name{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.owner{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.action{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.list{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    font-style: italic;
+    cursor: pointer;
+}
+
+#project_name{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#owner{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#action,#action_tick{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#action:hover{
+    color: red;
+}
+
+#action_tick:hover{
+    color: green;
+}
+
+/*! css for search area */
+.join_area{
+    width: 100%;
+    height: 89%;
+    background-color: var(--secondary-color);
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+
+.search_area{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.search_area form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_area form button,input{
+    margin: 5px;
+}
+
+.search_area input{
+    width: 88%;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid black;
+    padding: 0px 10px;
+}
+
+.search_area button{
+    width: 50%;
+    height: 25px;
+    background-color: var(--button-color);
+    outline: none;
+    border: none;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+/*! result area */
+.result_area{
+    width: 98%;
+    height: 55%;
+    background-color: var(--text-color);
+    overflow-y: scroll;
+}
+
+.result_area h3{
+    width: 100%;
+    text-align: center;
+}
+
+#join{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#join:hover{
+    color: red;
+}
+
+
+/*! Request Button */
+.request_b{
+    position: absolute;
+    /* bottom: 10%; */
+    top: 80%;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--text-color);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.create{
+    position: absolute;
+    /* bottom: 10%; */
+    top: 80%;
+    right: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--text-color);   
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+/*! css for modal */
+/* Add these styles to your existing dashboard.css or create a new CSS file */
+
+/* .custom-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px; 
+    width: 100%;
+  }
+  
+  .custom-modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .custom-modal-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .custom-modal-header,
+  .custom-modal-footer {
+    padding: 10px;
+    background-color: #f5f5f5;
+  }
+  
+  .custom-modal-body {
+    flex-grow: 1;
+    padding: 10px;
+  } */
+  
+
+  /* Add these styles to your existing dashboard.css or create a new CSS file */
+/* 
+.custom-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px; 
+    width: 100%;
+    transition: opacity 5s ease-in-out;
+  }
+  
+  .custom-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custom-modal-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .custom-modal-header,
+  .custom-modal-footer {
+    padding: 10px;
+    background-color: #f5f5f5;
+  }
+  
+  .custom-modal-body {
+    flex-grow: 1;
+    padding: 10px;
+  } */
+
+  .custom-modal {
+    position: fixed;
+    top: 0; /* Set top to 0 to display at the top of the screen */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px; 
+    width: 100%;
+    transition: opacity 5s ease-in-out;
+}
+
+.custom-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-modal-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-modal-header,
+.custom-modal-footer {
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+.custom-modal-body {
+    flex-grow: 1;
+    padding: 10px;
+}
