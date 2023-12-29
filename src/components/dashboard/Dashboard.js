@@ -180,7 +180,7 @@ export default function Dashboard() {
         //* using context
         setWs_id(ws_id)
         sessionStorage.setItem("ws_id", ws_id)
-        navigate("/board")
+        navigate("https://kanban-board-fg6l.onrender.com/board")
     }
 
     //! accept and reject the requests

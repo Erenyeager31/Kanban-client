@@ -32,7 +32,7 @@ export default function Signup() {
       alert(json.message)
       sessionStorage.setItem('username', json.user.name)
       sessionStorage.setItem('email', json.user.email)
-      window.location.assign("/ws_dashboard")
+      window.location.assign("https://kanban-board-fg6l.onrender.com/ws_dashboard")
     } else {
       alert(json.message)
     }
@@ -62,7 +62,7 @@ export default function Signup() {
             </div> */}
         </form>
         <div className="button_div_signup">
-          <a href='/login' type="button">LOGIN</a>
+          <a href='https://kanban-board-fg6l.onrender.com/login' type="button">LOGIN</a>
         </div>
       </div>
     </div>
