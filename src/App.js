@@ -20,7 +20,7 @@ function App() {
   const [ws_id,setWs_id] = useState(sessionStorage.getItem("ws_id"))
   const [isLoggedin,setLoggedIn] = useState(sessionStorage.getItem("isLoggedIn"))
 
-  axios.defaults.baseURL = 'http://localhost:5000/api/';
+  axios.defaults.baseURL = 'https://kanban-board-fg6l.onrender.com/api/';
   return (
     //! this will set the state to be accessible by any componenets
     <WSContext.Provider value={{ws_id,setWs_id,isLoggedin,setLoggedIn}}>
