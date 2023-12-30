@@ -60,7 +60,7 @@ function Otp_ver() {
     <div className='otp_container'>
       <div className="otp_right">
         <form action="" className="otp_form">
-          <h3 className="heading">VERIFY EMAIL</h3>
+          <h3 className="heading">VERIFY EMAIL !</h3>
           <div className="email_div">
             <input className='email' type="text" name='email' onChange={handlechange} value={credential.email} placeholder='Email' readOnly={readOnly} />
           </div>
