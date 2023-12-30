@@ -50,7 +50,7 @@ export default function Login() {
         <div className='login_container'>
             <div className="login_right">
                 <form action="" className="login_form">
-                    <h3 className="heading">LOGIN FORM</h3>
+                    <h3 className="heading">LOGIN FORM !</h3>
                     <div className="email_div">
                         <input type="text" name='email' onChange={handlechange} value={credential.email} placeholder='Email'/>
                     </div>
