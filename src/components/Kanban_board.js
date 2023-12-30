@@ -7,7 +7,7 @@ axios.defaults.withCredentials = true
 axios.defaults.baseURL = 'https://kanban-board-fg6l.onrender.com/api/';
 
 // const port = 
-const WS_URL = 'ws://kanban-board-fg6l.onrender.com'
+const WS_URL = 'wss://kanban-board-fg6l.onrender.com'
 const message = {
   "JOIN": "join",
   "LEAVE": "leave",
