@@ -51,7 +51,7 @@ function Otp_ver() {
     if (json.success) {
       alert(json.message);
       sessionStorage.setItem('email',credential.email)
-      window.location.replace('https://kanban-board-fg6l.onrender.com/signup')
+      window.location.replace('/signup')
     } else {
       alert(json.message);
     }
