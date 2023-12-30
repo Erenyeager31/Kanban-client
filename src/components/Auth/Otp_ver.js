@@ -1,9 +1,9 @@
 import { React, useState } from 'react'
 import axios from 'axios'
-// import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 function Otp_ver() {
-  // const navigate = useNavigate()
+  const navigate = useNavigate()
 
   const [credential, setcredentials] = useState({
     email: "",
@@ -51,7 +51,7 @@ function Otp_ver() {
     if (json.success) {
       alert(json.message);
       sessionStorage.setItem('email',credential.email)
-      window.location.replace('/signup')
+      navigate('/signup')
     } else {
       alert(json.message);
     }

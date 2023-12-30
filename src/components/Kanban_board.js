@@ -3,6 +3,7 @@ import '../screen.css'
 import { WSContext } from '../context/Workspace'
 import axios from 'axios'
 import ReactModal from 'react-modal';
+import { useNavigate } from 'react-router-dom';
 axios.defaults.withCredentials = true
 axios.defaults.baseURL = 'https://kanban-board-fg6l.onrender.com/api/';
 
@@ -17,6 +18,7 @@ const email = sessionStorage.getItem('email')
 const username = sessionStorage.getItem('username')
 
 export default function Kanban_board() {
+  const navigate = useNavigate()
   //! setUsers
   const [users, setUsers] = useState([{}])
 
